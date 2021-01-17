@@ -9,5 +9,4 @@
 * Restart the server
 * check plugindata for config.yml to make changes.
 * Original plugin by 64FF00 : https://poggit.pmmp.io/p/purechat
-
-Example: ![header image](https://github.com/Ignaciox/PurechatKills/blob/main/example.png)
+![header image](https://github.com/Ignaciox/PurechatKills/blob/main/example.png)
