@@ -1,0 +1,42 @@
+
+# PureChat by 64FF00 (xktiverz@gmail.com, @64ff00 for Twitter)
+
+---
+
+# PureChat version string
+# - string
+version: "1.4.10-6"
+
+# Set default factions plugin for PureChat
+# - FactionsPro / null
+default-factions-plugin: FactionsPro
+
+# Enable this if you want to use per-world chat formats / per-world nametags for players
+# - true / false
+enable-multiworld-chat: false
+
+# Please check if you have all PurePerms groups in your server here
+
+# &0: Black, &1: Dark Blue, &2: Dark Green, &3: Dark Aqua, &4: Dark Red, &5: Dark Purple, &6: Gold, &7: Gray, &8: Dark Gray, &9: Blue
+# &a: Green, &b: Aqua, &c: Red, &d: Light Purple, &e: Yellow, &f: White
+# &k: Obfuscated, &l: Bold, &m: Strikethrough, &n: Underline, &o: Italic, &r: Reset
+
+# Available PureChat tags: {display_name}, {msg}, {fac_name}, {fac_rank}, {prefix}, {suffix}, {world} {kills}
+groups:
+  Guest:
+    chat: '&7[Guest] &f{fac_rank}{fac_name}&a {display_name} &7> &f{msg}'
+    nametag: '&7[Guest] &f{display_name}'
+    worlds: []
+  Admin:
+    chat: '&c[Admin] &7{fac_rank}{fac_name}&6 {display_name} &d>&b {msg}'
+    nametag: '&a[Admin]&e {fac_rank}{fac_name} &6{display_name}'
+    worlds: []
+  Owner:
+    chat: '&d[Owner] &c{fac_rank}{fac_name} &b{display_name} &c>&6> &b{msg}'
+    nametag: '&d[Owner]&c {fac_rank}{fac_name} &b{display_name}'
+    worlds: []
+  OP:
+    chat: '&a[OP] &5{fac_rank}{fac_name}&b {prefix}{display_name}{suffix} &c>&6> &f{msg}'
+    nametag: '&a[OP] &c{fac_rank}{fac_name} &b{display_name}'
+    worlds: []
+...
